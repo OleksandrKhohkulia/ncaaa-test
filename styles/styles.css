@@ -16,8 +16,9 @@
   --light-color: #f8f8f8;
   --dark-color: #505050;
   --text-color: #131313;
-  --link-color: #3b63fb;
-  --link-hover-color: #1d3ecf;
+  --button-color:#ee831f;
+  --link-color: #d0342f;
+  --link-hover-color: #ee831f;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -181,7 +182,7 @@ button {
   line-height: 1.25;
   text-align: center;
   text-decoration: none;
-  background-color: var(--link-color);
+  background-color: var(--button-color);
   color: var(--background-color);
   cursor: pointer;
   overflow: hidden;
