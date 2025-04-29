@@ -26,6 +26,6 @@ footer .columns-img-col p{
 footer h5 {
   color: white;
 }
-.copyright-2024-by-nebraska-commission-on-african-american-affairs, footer li>a{
+#copyright-2024-by-nebraska-commission-on-african-american-affairs, .footer_block li>a, footer li>p{
   color: #6b93ac;
 }
