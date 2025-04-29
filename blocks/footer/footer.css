@@ -29,3 +29,6 @@ footer h5 {
 #copyright-2024-by-nebraska-commission-on-african-american-affairs, .custom-footer li>a, .custom-footer p{
   color: #6b93ac;
 }
+.custom-footer>div:nth-child(2){
+  align-items: flex-start;
+}
