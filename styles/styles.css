@@ -111,6 +111,7 @@ h6 {
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
+  color: var(--button-color);
 }
 
 h1 { font-size: var(--heading-font-size-xxl); }
@@ -255,8 +256,4 @@ main .section.highlight {
   background-color: var(--light-color);
   margin: 0;
   padding: 40px 0;
-}
-
-h1,h2,h3,h4,h5,h6{
-  color: var(--button-color);
 }
