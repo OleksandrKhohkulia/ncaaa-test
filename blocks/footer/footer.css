@@ -32,3 +32,6 @@ footer h5 {
 .custom-footer>div:nth-child(2){
   align-items: flex-start;
 }
+footer ul {
+  padding-left: 20px;
+}
