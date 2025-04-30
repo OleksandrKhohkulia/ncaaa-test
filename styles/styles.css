@@ -293,7 +293,7 @@ main .section.highlight {
 .about-content img{
   border-radius: 50px;
 }
-.about-content>div{
+.about-content .columns-img-col{
   align-self: flex-start;
-  margin-top: 20px;
+  margin-top: 40px;
 }
