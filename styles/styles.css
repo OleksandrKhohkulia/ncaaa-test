@@ -297,3 +297,6 @@ main .section.highlight {
   align-self: flex-start;
   margin-top: 40px;
 }
+.faq-title{
+  text-align: center;
+}
