@@ -47,3 +47,6 @@ footer ul {
   gap: 10px;
   margin-left: 16px;
 }
+.custom-footer .cards-card-image img{
+  aspect-ratio: 1;
+}
