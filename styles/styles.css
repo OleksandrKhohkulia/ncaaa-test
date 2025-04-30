@@ -258,6 +258,7 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-.healthcare p {
-  text-shadow: 0 0 10px white;
+.healthcare p:first-child {
+  color: white;
+  text-shadow: 0 0 8px black;
 }

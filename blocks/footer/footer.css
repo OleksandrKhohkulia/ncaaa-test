@@ -19,19 +19,25 @@ footer .footer p {
     padding: 40px 32px 24px;
   }
 }
+
 footer .columns-img-col p{
   display: flex;
   gap: 10px;
 }
+
 footer h5 {
   color: white;
 }
+
 #copyright-2024-by-nebraska-commission-on-african-american-affairs, .custom-footer li>a, .custom-footer p{
   color: #6b93ac;
 }
-.custom-footer>div:nth-child(2){
-  align-items: flex-start;
-}
+
+
 footer ul {
   padding-left: 20px;
+}
+
+.custom-footer>div:nth-child(2){
+  align-items: flex-start;
 }
