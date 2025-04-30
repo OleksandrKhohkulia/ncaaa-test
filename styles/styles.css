@@ -290,3 +290,10 @@ main .section.highlight {
   border-left: 2px solid #e6872d;
   margin: 10px;
 }
+.about-content img{
+  border-radius: 50px;
+}
+.about-content>div{
+  align-self: flex-start;
+  margin-top: 20px;
+}
