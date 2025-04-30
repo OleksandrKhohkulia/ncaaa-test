@@ -39,9 +39,11 @@ footer ul {
 }
 .custom-footer>ul>li{
   background-color: transparent;
+  border: none;
 }
 .custom-footer .cards-card-image>p{
   display: flex;
   align-items: center;
   gap: 10px;
+  margin-left: 16px;
 }
