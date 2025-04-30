@@ -270,3 +270,23 @@ main .section.highlight {
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   max-width: 960px;
 }
+.about-content ul{
+  padding: 0;
+}
+.about-content li{
+  list-style: none;
+  display: flex;
+  margin-bottom: 15px;
+}
+.about-content li:before {
+  display: block;
+  content: "";
+  width: 10px;
+  height: 7px;
+  min-height: 7px;
+  min-width: 10px;
+  transform: rotate(311deg);
+  border-bottom: 2px solid #e6872d;
+  border-left: 2px solid #e6872d;
+  margin: 10px;
+}
