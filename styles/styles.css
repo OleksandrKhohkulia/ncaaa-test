@@ -262,3 +262,6 @@ main .section.highlight {
   color: white;
   text-shadow: 0 0 8px black;
 }
+.cards.stay-tuned.block>ul {
+  grid-template-columns: repeat(3, minmax(257px, 1fr));
+}
