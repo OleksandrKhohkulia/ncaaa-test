@@ -36,3 +36,6 @@
     padding: 40px 32px;
   }
 }
+.about-hero{
+  background: linear-gradient(128deg, #20405a,#24435b, #486275, #d8dde1);
+}
