@@ -18,7 +18,7 @@
   --text-color: #131313;
   --button-color:#ee831f;
   --link-color: #d0342f;
-  --link-hover-color: #ee831f;
+  --link-hover-color: #e07d21;
 
   /* fonts */
   --body-font-family: roboto, roboto-fallback, sans-serif;
@@ -111,6 +111,10 @@ h6 {
   font-weight: 600;
   line-height: 1.25;
   scroll-margin: 40px;
+  color:#105f8a;
+}
+
+h1{
   color: var(--button-color);
 }
 
