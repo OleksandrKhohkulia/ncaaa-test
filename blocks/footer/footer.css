@@ -38,8 +38,8 @@ footer ul {
   padding-left: 20px;
 }
 .custom-footer>ul>li{
-  background-color: transparent;
-  border: none;
+  background-color: transparent !important; 
+  border: none !important;
 }
 .custom-footer .cards-card-image>p{
   display: flex;
