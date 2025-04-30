@@ -258,7 +258,7 @@ main .section.highlight {
   padding: 40px 0;
 }
 
-.healthcare>p:nth-child(1){
+.healthcare p:not([class="button-container"]){
   color: white;
   text-shadow: 0 0 8px black;
 }
