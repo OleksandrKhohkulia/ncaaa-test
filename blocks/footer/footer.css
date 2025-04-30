@@ -37,7 +37,11 @@ footer h5 {
 footer ul {
   padding-left: 20px;
 }
-
-.custom-footer>div:nth-child(2){
-  align-items: flex-start;
+.custom-footer>ul>li{
+  background-color: transparent;
+}
+.custom-footer .cards-card-image>p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
