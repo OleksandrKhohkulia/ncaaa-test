@@ -28,7 +28,7 @@ export default async function decorate(block) {
     threshold: 1.0,
   };
   
-  console.log(iframe.contentDocument)
+  
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
