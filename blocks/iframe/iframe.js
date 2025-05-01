@@ -22,28 +22,6 @@ export default async function decorate(block) {
     rootMargin: '20%',
     threshold: 1.0,
   };
-  
-  if(iframe){
-      // console.log(iframe)
-      // const doc = iframe.contentDocument
-      document.innerHTML +=`<script>
-    function sendHeight(){
-        const height = documentElement.scrollHeight || document.body.scrollHeight;
-        window.parent.postMessage({
-            type: 'resize',
-            height: height
-          },
-        "*");
-     }
-    window.addEventListner('load',sendHeight);
-    window.addEventListner('resize',sendHeight);
-  </script>`
-      // const innerHtml = doc.children[0]
-      // const content =  document.querySelector(".vvBody ck-content")
-      // const styles = getComputedStyle(content)
-      // console.log(styles.height)
-    }
-
 
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
@@ -59,4 +37,15 @@ export default async function decorate(block) {
   observer.observe(block);
 }
 
-// const iframe = document.querySelector("iframe")
+
+function sendHeight(){
+  const height = documentElement.scrollHeight || document.body.scrollHeight;
+  window.parent.postMessage({
+      type: 'resize',
+      height: height
+    },
+  "*");
+}
+
+window.addEventListner('load',sendHeight);
+window.addEventListner('resize',sendHeight);
