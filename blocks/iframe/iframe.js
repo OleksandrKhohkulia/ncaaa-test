@@ -21,14 +21,14 @@ export default async function decorate(block) {
 
   iframe.src = link;
   iframe.setAttribute('frameborder', 0);
-  console.log(iframe.contentDocument)
-
+  
   const options = {
     root: null,
     rootMargin: '20%',
     threshold: 1.0,
   };
-
+  
+  console.log(iframe.contentDocument)
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
