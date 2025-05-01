@@ -41,6 +41,13 @@ export default async function decorate(block) {
     }
 
 
+    window.addEventListener('message', (e)=>{
+      if(e.data.type === 'resize' && e.data.height){
+        const myIframe =document.querySelector('iframe')
+        myIframe.style.height = e.data.height +'px'
+      }
+    })
+    
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
