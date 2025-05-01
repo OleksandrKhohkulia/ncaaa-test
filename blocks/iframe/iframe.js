@@ -10,10 +10,14 @@ export default async function decorate(block) {
 
   if (fixedHeightClass) {
     iframe.height = fixedHeightClass;
-  } 
+  }
   
-  iframe.width = "100%"
-
+  if (fixedWidthClass) {
+    iframe.width = fixedWidthClass;
+  }
+  else{
+    iframe.width = "100%"
+  }
 
   iframe.src = link;
   iframe.setAttribute('frameborder', 0);
