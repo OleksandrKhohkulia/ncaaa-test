@@ -127,3 +127,14 @@ async function loadPage() {
 }
 
 loadPage();
+
+
+window.addEventListener('load',()=>{
+  const customIframe = document.querySelector('iframe')  
+  console.log(customIframe)
+  const doc = customIframe.contentDocument.body
+  console.log(doc)
+  const height =doc.height
+  console.log(height)
+  customIframe.style.height=height+"px"
+})

@@ -22,18 +22,6 @@ export default async function decorate(block) {
     rootMargin: '20%',
     threshold: 1.0,
   };
-
-  
-window.addEventListener('load',()=>{
-  const customIframe = document.querySelector('iframe')  
-  console.log(customIframe)
-  const doc = customIframe.contentDocument.body
-  console.log(doc)
-  const height =doc.height
-  console.log(height)
-  customIframe.style.height=height+"px"
-})
-
   
       // document.innerHTML +=
   //   `<script>
