@@ -6,7 +6,7 @@ export default async function decorate(block) {
   iframe.style.overflow = 'hidden';
   const link = block.querySelector('a')?.getAttribute('href');
   const fixedHeightClass = [...block.classList].find((el) => el.startsWith('height-')).split('-')[1];
-  const fixedWidthClass = [...block.classList].find((el) => el.startsWith('width-')).split('-')[1];
+  const fixedWidthClass = [...block.classList].find((el) => el.startsWith('width-'))?.split('-')[1];
 
   if (fixedHeightClass) {
     iframe.height = fixedHeightClass;
