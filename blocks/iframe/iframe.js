@@ -1,7 +1,7 @@
 export default async function decorate(block) {
   const iframe = document.createElement('iframe');
   iframe.setAttribute('seamless', 'seamless');
-  iframe.setAttribute('scrolling', 'yes');
+  iframe.setAttribute('scrolling', 'no');
   iframe.style.border = '0';
   iframe.style.overflow = 'hidden';
   const link = block.querySelector('a')?.getAttribute('href');
@@ -9,7 +9,11 @@ export default async function decorate(block) {
   const fixedWidthClass = [...block.classList].find((el) => el.startsWith('width-')).split('-')[1];
 
   if (fixedHeightClass) {
-    iframe.height = fixedHeightClass;
+    // iframe.height = fixedHeightClass;
+    iframe.height=iframe.contentDocument.body.style.height
+  }
+  else{
+    iframe.height=iframe.contentDocument.body.style.height
   }
   if (fixedWidthClass) {
     iframe.width = fixedWidthClass;
@@ -22,33 +26,6 @@ export default async function decorate(block) {
     rootMargin: '20%',
     threshold: 1.0,
   };
-
-
-      // document.innerHTML +=
-  //   `<script>
-  //   function sendSize(){
-  //       const height = documentElement.scrollHeight || document.body.scrollHeight;
-  //       window.parent.postMessage({
-  //           type: 'resize',
-  //           height: height
-  //         },
-  //       "*");
-  //    }
-  //   window.addEventListner('load',sendSize);
-  //   window.addEventListner('resize',sendSize);
-  // </script>`
-    
-
-// window.addEventListener('DOMContentLoaded',()=>{
-//   window.addEventListener('message', (e)=>{
-//     if(e.data.type === 'resize' && e.data.height){
-//       const myIframe =document.querySelector('iframe')
-//       console.log(e.data)
-//       myIframe.style.height = e.data.height +'px'
-//     }
-//   })
-
-// })
 
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
@@ -65,6 +42,8 @@ export default async function decorate(block) {
 }
 
     // if(iframe){     
+      // const customIframe = document.querySelector('iframe')
+      // console.log(customIframe)
     // const doc = iframe.contentDocument
     // console.log(iframe)
     // console.log(doc)
