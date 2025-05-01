@@ -24,6 +24,16 @@ export default async function decorate(block) {
   };
   
   console.log(iframe)
+  if(iframe){
+    iframe.addEventListener('load', ()=>{
+      console.log(iframe)
+      const doc = iframe.contentDocument
+      const innerHtml = doc.children[0]
+      const content =  document.querySelector(".vvBody ck-content")
+      const styles = getComputedStyle(content)
+      console.log(styles.height)
+    })
+  }
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -38,14 +48,4 @@ export default async function decorate(block) {
   observer.observe(block);
 }
 
-// const customIframe = document.querySelector("iframe")
-// if(customIframe){
-//   customIframe.addEventListener('load', ()=>{
-//     console.log(customIframe)
-//     const doc = customIframe.contentDocument
-//     const innerHtml = doc.children[0]
-//     const content =  document.querySelector(".vvBody ck-content")
-//     const styles = getComputedStyle(content)
-//     console.log(styles.height)
-//   })
-// }
+// const iframe = document.querySelector("iframe")
