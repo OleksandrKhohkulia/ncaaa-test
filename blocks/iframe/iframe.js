@@ -10,7 +10,7 @@ export default async function decorate(block) {
 
   if (fixedHeightClass) {
     // iframe.height = fixedHeightClass;
-    iframe.height=iframe.contentDocument.body.style.height
+    iframe.height=iframe.contentDocument.style.height
   }
   else{
     iframe.height=iframe.contentDocument.body.style.height
