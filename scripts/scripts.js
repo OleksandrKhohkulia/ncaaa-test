@@ -126,12 +126,4 @@ async function loadPage() {
   loadDelayed();
 }
 
-loadPage();
-  
-async function getIframeSize() {
-  await loadPage()
-  const customIframe = document.querySelector('iframe')
-  console.log(customIframe)
-}
-
-getIframeSize();
+loadPage();  

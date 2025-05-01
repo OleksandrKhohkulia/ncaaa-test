@@ -64,6 +64,13 @@ export default async function decorate(block) {
   observer.observe(block);
 }
 
+async function getIframeSize() {
+  await loadPage()
+  const customIframe = document.querySelector('iframe')
+  console.log(customIframe)
+}
+
+getIframeSize();
 
 
     // if(iframe){     
