@@ -24,9 +24,9 @@ export default async function decorate(block) {
   };
   
   if(iframe){
-      console.log(iframe)
-      const doc = iframe.contentDocument
-      doc.innerHTML +=`<script>
+      // console.log(iframe)
+      // const doc = iframe.contentDocument
+      document.innerHTML +=`<script>
     function sendHeight(){
         const height = documentElement.scrollHeight || document.body.scrollHeight;
         window.parent.postMessage({
