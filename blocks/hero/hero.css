@@ -39,3 +39,8 @@
 .about-hero{
   background: linear-gradient(128deg, #20405a, #486275, #d8dde1);
 }
+.hero.healthcare>div>div>*{   
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+}
