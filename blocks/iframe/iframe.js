@@ -64,12 +64,10 @@ export default async function decorate(block) {
   observer.observe(block);
 }
 
-block.addEventListener("load",()=>{
   
   const customIframe = document.querySelector('iframe')
   console.log(customIframe)
-  
-})
+
   iframe.addEventListener('load',()=>{
     if(iframe){     
     const doc = iframe.contentDocument
