@@ -10,7 +10,6 @@ export default async function decorate(block) {
 
   if (fixedHeightClass) {
     iframe.height = fixedHeightClass;
-    console.log(iframe.height)
   }
   if (fixedWidthClass) {
     iframe.width = fixedWidthClass;
@@ -25,32 +24,39 @@ export default async function decorate(block) {
   };
 
   
-  if(iframe){
-      document.innerHTML +=
-    `<script>
-    function sendSize(){
-        const height = documentElement.scrollHeight || document.body.scrollHeight;
-        window.parent.postMessage({
-            type: 'resize',
-            height: height
-          },
-        "*");
-     }
-    window.addEventListner('load',sendSize);
-    window.addEventListner('resize',sendSize);
-  </script>`
-    }
-
 window.addEventListener('DOMContentLoaded',()=>{
-  window.addEventListener('message', (e)=>{
-    if(e.data.type === 'resize' && e.data.height){
-      const myIframe =document.querySelector('iframe')
-      console.log(e.data)
-      myIframe.style.height = e.data.height +'px'
-    }
-  })
-
+  const customIframe = document.querySelector('iframe')  
+  const doc = customIframe.contentDocument.body
+  const height =doc.height
+  customIframe.style.height=height+"px"
 })
+
+  
+      // document.innerHTML +=
+  //   `<script>
+  //   function sendSize(){
+  //       const height = documentElement.scrollHeight || document.body.scrollHeight;
+  //       window.parent.postMessage({
+  //           type: 'resize',
+  //           height: height
+  //         },
+  //       "*");
+  //    }
+  //   window.addEventListner('load',sendSize);
+  //   window.addEventListner('resize',sendSize);
+  // </script>`
+    
+
+// window.addEventListener('DOMContentLoaded',()=>{
+//   window.addEventListener('message', (e)=>{
+//     if(e.data.type === 'resize' && e.data.height){
+//       const myIframe =document.querySelector('iframe')
+//       console.log(e.data)
+//       myIframe.style.height = e.data.height +'px'
+//     }
+//   })
+
+// })
 
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
