@@ -273,6 +273,7 @@ header nav .nav-tools {
 
 .nav-contacts>div>div:not([class="button-container"]){
   display: none;
+  color: var(--link-color);
 }
 @media (width >= 900px) {
   .nav-contacts>div>div:not([class="button-container"]){
