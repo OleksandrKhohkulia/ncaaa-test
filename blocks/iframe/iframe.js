@@ -23,9 +23,12 @@ export default async function decorate(block) {
     threshold: 1.0,
   };
   
+  const customIframe = document.querySelector('iframe')
+  console.log(customIframe)
+
   iframe.addEventListener('load',()=>{
     if(iframe){     
-    const doc = iframe.contentDocument || iframe.contentWindow.document
+    const doc = iframe.contentDocument
     console.log(iframe)
     console.log(doc)
     console.log(iframe)
