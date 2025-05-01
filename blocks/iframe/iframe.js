@@ -29,11 +29,9 @@ export default async function decorate(block) {
     `<script>
     function sendSize(){
         const height = documentElement.scrollHeight || document.body.scrollHeight;
-        const width = documentElement.scrollWidth || document.body.scrollWidth ;
         window.parent.postMessage({
             type: 'resize',
-            height: height,
-            width: width 
+            height: height
           },
         "*");
      }
