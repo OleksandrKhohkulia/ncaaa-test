@@ -69,12 +69,12 @@ export default async function decorate(block) {
   console.log(customIframe)
 
 
-    if(iframe){     
-    const doc = iframe.contentDocument
-    console.log(iframe)
-    console.log(doc)
-    console.log(iframe)
+    // if(iframe){     
+    // const doc = iframe.contentDocument
+    // console.log(iframe)
+    // console.log(doc)
+    // console.log(iframe)
     // const height =doc.height
     // console.log(height)
     // iframe.style.height=height+"px"
-    }
+    // }
