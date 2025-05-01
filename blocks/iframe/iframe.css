@@ -3,3 +3,13 @@
         border: none;
     }
 }
+
+.iframe_resize{
+    display: flex;
+    justify-content: center;
+}
+
+.iframe_resize > iframe {
+ width: 100% !important;
+}
+
