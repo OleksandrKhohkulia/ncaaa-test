@@ -23,6 +23,9 @@ export default async function decorate(block) {
     threshold: 1.0,
   };
   
+  iframe.addEventListener('load',()=>{
+    console.log(iframe)
+  })
       // document.innerHTML +=
   //   `<script>
   //   function sendSize(){
