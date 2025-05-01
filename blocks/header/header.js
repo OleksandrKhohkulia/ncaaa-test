@@ -164,7 +164,3 @@ export default async function decorate(block) {
   navWrapper.append(nav);
   block.append(navWrapper);
 }
-
-
-const navli = document.querySelectorAll(".section nav-sections>div>ul>li")
-console.log(navli)
