@@ -26,6 +26,7 @@ export default async function decorate(block) {
   iframe.addEventListener('load',()=>{
     if(iframe){     
     const doc = iframe.contentDocument
+    console.log(iframe)
     console.log(doc)
     // const height =doc.height
     // console.log(height)
