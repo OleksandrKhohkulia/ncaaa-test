@@ -129,7 +129,7 @@ async function loadPage() {
 loadPage();
 
 
-window.addEventListener('load',()=>{
+window.addEventListener("DOMContentLoaded",()=>{
   const customIframe = document.querySelector('iframe')  
   console.log(customIframe)
   const doc = customIframe.contentDocument.body
