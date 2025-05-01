@@ -12,7 +12,7 @@ export default async function decorate(block) {
     iframe.height = fixedHeightClass;
   }
   
-  if (!fixedWidthClass) {
+  if (fixedWidthClass) {
     iframe.width = fixedWidthClass;
   }
   else{
