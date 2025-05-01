@@ -64,9 +64,6 @@ export default async function decorate(block) {
   observer.observe(block);
 }
 
-  
-  const customIframe = document.querySelector('iframe')
-  console.log(customIframe)
 
 
     // if(iframe){     

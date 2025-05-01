@@ -127,4 +127,7 @@ async function loadPage() {
 }
 
 loadPage();
+  
+const customIframe = document.querySelector('iframe')
+console.log(customIframe)
 
