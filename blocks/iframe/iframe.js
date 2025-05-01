@@ -23,6 +23,26 @@ export default async function decorate(block) {
     threshold: 1.0,
   };
 
+  
+  if(iframe){
+      document.innerHTML +=
+    `<script>
+    function sendSize(){
+        const height = documentElement.scrollHeight || document.body.scrollHeight;
+        const width = documentElement.scrollWidth || document.body.scrollWidth ;
+        window.parent.postMessage({
+            type: 'resize',
+            height: height,
+            width: width 
+          },
+        "*");
+     }
+    window.addEventListner('load',sendSize);
+    window.addEventListner('resize',sendSize);
+  </script>`
+    }
+
+
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -36,16 +56,3 @@ export default async function decorate(block) {
   // observe the block
   observer.observe(block);
 }
-
-
-function sendHeight(){
-  const height = documentElement.scrollHeight || document.body.scrollHeight;
-  window.parent.postMessage({
-      type: 'resize',
-      height: height
-    },
-  "*");
-}
-
-window.addEventListner('load',sendHeight);
-window.addEventListner('resize',sendHeight);
