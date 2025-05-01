@@ -25,7 +25,7 @@ export default async function decorate(block) {
   
   iframe.addEventListener('load',()=>{
     if(iframe){     
-    const doc = iframe.contentDocument
+    const doc = iframe.contentDocument || iframe.contentWindow
     console.log(iframe)
     console.log(doc)
     console.log(iframe)
