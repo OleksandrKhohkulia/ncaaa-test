@@ -270,3 +270,12 @@ header nav .nav-tools {
 .nav-contacts .button{
   display: flex !important;
 }
+
+@media (width >= 900px) {
+  .nav-contacts>div>div:not([class="button-container"]){
+    display: block;
+  }
+}
+.nav-contacts>div>div:not([class="button-container"]){
+  display: none;
+}
