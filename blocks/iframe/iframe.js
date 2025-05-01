@@ -24,7 +24,7 @@ export default async function decorate(block) {
   };
 
   
-window.addEventListener('DOMContentLoaded',()=>{
+window.addEventListener('load',()=>{
   const customIframe = document.querySelector('iframe')  
   console.log(customIframe)
   const doc = customIframe.contentDocument.body
