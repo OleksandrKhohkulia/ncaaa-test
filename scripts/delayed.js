@@ -1,2 +1,2 @@
 // add delayed functionality here
-console.log(iframe.contentDocument)
+console.log(document.querySelector('iframe').contentDocument)
