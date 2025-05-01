@@ -37,14 +37,15 @@ export default async function decorate(block) {
   observer.observe(block);
 }
 
-const customIframe = document.querySelector("iframe")
-if(customIframe){
-  customIframe.addEventListener('load', ()=>{
-    console.log(customIframe)
-    const doc = customIframe.contentDocument
-    const innerHtml = doc.children[0]
-    const content =  document.querySelector(".vvBody ck-content")
-    const styles = getComputedStyle(content)
-    console.log(styles.height)
-  })
-}
+console.log(iframe)
+// const customIframe = document.querySelector("iframe")
+// if(customIframe){
+//   customIframe.addEventListener('load', ()=>{
+//     console.log(customIframe)
+//     const doc = customIframe.contentDocument
+//     const innerHtml = doc.children[0]
+//     const content =  document.querySelector(".vvBody ck-content")
+//     const styles = getComputedStyle(content)
+//     console.log(styles.height)
+//   })
+// }
