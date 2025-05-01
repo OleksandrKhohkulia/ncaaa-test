@@ -127,14 +127,3 @@ async function loadPage() {
 }
 
 loadPage();
-
-const iframe = document.querySelector("iframe")
-if(iframe){
-  iframe.addEventListener('load', ()=>{
-    const doc = iframe.contentDocument
-    const innerHtml = doc.children[0]
-    const content =  document.querySelector(".vvBody ck-content")
-    const styles = getComputedStyle(content)
-    console.log(styles.height)
-  })
-}

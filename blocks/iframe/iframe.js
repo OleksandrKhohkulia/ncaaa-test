@@ -1,7 +1,7 @@
 export default async function decorate(block) {
   const iframe = document.createElement('iframe');
   iframe.setAttribute('seamless', 'seamless');
-  iframe.setAttribute('scrolling', 'no');
+  iframe.setAttribute('scrolling', 'yes');
   iframe.style.border = '0';
   iframe.style.overflow = 'hidden';
   const link = block.querySelector('a')?.getAttribute('href');
@@ -35,4 +35,16 @@ export default async function decorate(block) {
 
   // observe the block
   observer.observe(block);
+}
+
+const customIframe = document.querySelector("iframe")
+if(customIframe){
+  customIframe.addEventListener('load', ()=>{
+    console.log(customIframe)
+    const doc = customIframe.contentDocument
+    const innerHtml = doc.children[0]
+    const content =  document.querySelector(".vvBody ck-content")
+    const styles = getComputedStyle(content)
+    console.log(styles.height)
+  })
 }
