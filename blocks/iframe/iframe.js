@@ -22,23 +22,8 @@ export default async function decorate(block) {
     rootMargin: '20%',
     threshold: 1.0,
   };
-  window.addEventListener('load',()=>{
-  
-  const customIframe = document.querySelector('iframe')
-  console.log(customIframe)
-  
-})
-  iframe.addEventListener('load',()=>{
-    if(iframe){     
-    const doc = iframe.contentDocument
-    console.log(iframe)
-    console.log(doc)
-    console.log(iframe)
-    // const height =doc.height
-    // console.log(height)
-    // iframe.style.height=height+"px"
-    }
-  })
+
+
       // document.innerHTML +=
   //   `<script>
   //   function sendSize(){
@@ -78,3 +63,21 @@ export default async function decorate(block) {
   // observe the block
   observer.observe(block);
 }
+
+block.addEventListener("loaded",()=>{
+  
+  const customIframe = document.querySelector('iframe')
+  console.log(customIframe)
+  
+})
+  iframe.addEventListener('load',()=>{
+    if(iframe){     
+    const doc = iframe.contentDocument
+    console.log(iframe)
+    console.log(doc)
+    console.log(iframe)
+    // const height =doc.height
+    // console.log(height)
+    // iframe.style.height=height+"px"
+    }
+  })
