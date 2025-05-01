@@ -271,11 +271,11 @@ header nav .nav-tools {
   display: flex !important;
 }
 
+.nav-contacts>div>div:not([class="button-container"]){
+  display: none;
+}
 @media (width >= 900px) {
   .nav-contacts>div>div:not([class="button-container"]){
     display: block;
   }
-}
-.nav-contacts>div>div:not([class="button-container"]){
-  display: none;
 }
