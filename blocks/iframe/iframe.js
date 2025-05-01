@@ -26,8 +26,11 @@ export default async function decorate(block) {
   
 window.addEventListener('DOMContentLoaded',()=>{
   const customIframe = document.querySelector('iframe')  
+  console.log(customIframe)
   const doc = customIframe.contentDocument.body
+  console.log(doc)
   const height =doc.height
+  console.log(height)
   customIframe.style.height=height+"px"
 })
 
