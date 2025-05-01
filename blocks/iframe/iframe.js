@@ -9,12 +9,7 @@ export default async function decorate(block) {
   const fixedWidthClass = [...block.classList].find((el) => el.startsWith('width-')).split('-')[1];
 
   if (fixedHeightClass) {
-    // iframe.height = fixedHeightClass;
-    console.log(iframe.contentDocument)
-    // iframe.height=iframe.contentDocument.body.style.height
-  }
-  else{
-    iframe.height=iframe.contentDocument.body.style.height
+    iframe.height = fixedHeightClass;
   }
   if (fixedWidthClass) {
     iframe.width = fixedWidthClass;
@@ -41,15 +36,3 @@ export default async function decorate(block) {
   // observe the block
   observer.observe(block);
 }
-
-    // if(iframe){     
-      // const customIframe = document.querySelector('iframe')
-      // console.log(customIframe)
-    // const doc = iframe.contentDocument
-    // console.log(iframe)
-    // console.log(doc)
-    // console.log(iframe)
-    // const height =doc.height
-    // console.log(height)
-    // iframe.style.height=height+"px"
-    // }
