@@ -13,10 +13,10 @@ export default async function decorate(block) {
   }
   
   if (!fixedWidthClass) {
-    iframe.width = "100%"
+    iframe.width = fixedWidthClass;
   }
   else{
-    iframe.width = fixedWidthClass;
+    iframe.width = "1200px"
   }
 
   iframe.src = link;
