@@ -64,7 +64,7 @@ export default async function decorate(block) {
   observer.observe(block);
 }
 
-block.addEventListener("loaded",()=>{
+block.addEventListener("load",()=>{
   
   const customIframe = document.querySelector('iframe')
   console.log(customIframe)
