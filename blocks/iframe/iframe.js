@@ -21,6 +21,7 @@ export default async function decorate(block) {
 
   iframe.src = link;
   iframe.setAttribute('frameborder', 0);
+  console.log(iframe.contentDocument)
 
   const options = {
     root: null,
