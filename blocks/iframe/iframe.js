@@ -24,7 +24,13 @@ export default async function decorate(block) {
   };
   
   iframe.addEventListener('load',()=>{
-    console.log(iframe)
+    if(iframe){     
+    const doc = iframe.contentDocument.body
+    console.log(doc)
+    const height =doc.height
+    console.log(height)
+    iframe.style.height=height+"px"
+    }
   })
       // document.innerHTML +=
   //   `<script>
