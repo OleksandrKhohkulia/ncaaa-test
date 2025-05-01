@@ -124,6 +124,8 @@ async function loadPage() {
   await loadEager(document);
   await loadLazy(document);
   loadDelayed();
+  const customIframe = document.querySelector('iframe')
+  console.log(customIframe)
 }
 
 loadPage();  
