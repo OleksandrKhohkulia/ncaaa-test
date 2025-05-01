@@ -22,10 +22,12 @@ export default async function decorate(block) {
     rootMargin: '20%',
     threshold: 1.0,
   };
+  window.addEventListener('DOMContentLoaded',()=>{
   
   const customIframe = document.querySelector('iframe')
   console.log(customIframe)
-
+  
+})
   iframe.addEventListener('load',()=>{
     if(iframe){     
     const doc = iframe.contentDocument
