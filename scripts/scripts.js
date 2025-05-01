@@ -128,9 +128,10 @@ async function loadPage() {
 
 loadPage();
   
-async ()=>{
+async function getIframeSize() {
   await loadPage()
   const customIframe = document.querySelector('iframe')
   console.log(customIframe)
 }
 
+getIframeSize();
