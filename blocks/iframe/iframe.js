@@ -22,7 +22,8 @@ export default async function decorate(block) {
     rootMargin: '20%',
     threshold: 1.0,
   };
-
+  
+  console.log(iframe)
   // add event listener for intersection observer when block is in view port
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((entry) => {
@@ -37,7 +38,6 @@ export default async function decorate(block) {
   observer.observe(block);
 }
 
-console.log(iframe)
 // const customIframe = document.querySelector("iframe")
 // if(customIframe){
 //   customIframe.addEventListener('load', ()=>{
