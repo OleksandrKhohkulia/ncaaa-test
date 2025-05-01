@@ -128,7 +128,11 @@ async function loadPage() {
 
 loadPage();
 
-const customIframe = document.querySelector(".custom-iframe")
-if(customIframe){
-  console.log(customIframe)
+const iframe = document.querySelector("iframe")
+if(iframe){
+   const doc = iframe.contentDocument
+   const innerHtml = doc.children[0]
+   const content =  document.querySelector(".vvBody ck-content")
+   const styles = getComputedStyle(content)
+   console.log(styles.height)
 }
