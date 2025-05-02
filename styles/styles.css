@@ -333,3 +333,6 @@ main .section.highlight {
     flex-direction: column;
   }
 }
+.housing-resources ul{
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+}
