@@ -263,7 +263,7 @@ header nav .nav-sections ul > li > ul > li {
   
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
     color: white;
-    padding: 8px;
+    padding: 20px;
   }
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul>li:hover {
     background-color:   #d62828;
