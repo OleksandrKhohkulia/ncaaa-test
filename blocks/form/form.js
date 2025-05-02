@@ -629,7 +629,3 @@ export default async function decorate(block) {
     container.replaceWith(form);
   }
 }
-
-window.addEventListener('DOMContentLoaded',()=>{
-  console.log('hi')
-})
