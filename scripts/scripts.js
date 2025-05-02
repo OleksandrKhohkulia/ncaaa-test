@@ -133,7 +133,7 @@ document.addEventListener('DOMContentLoaded',()=>{
   console.log(document.body)
   const meetingsBlock = document.querySelector(".meetings-form")
   console.log(meetingsBlock)
-  const meetingsForm = meetingsBlock.querySelector("form")
+  let meetingsForm = meetingsBlock.querySelector("form")
   console.log(meetingsForm)
   meetingsForm = meetingsBlock.querySelector("div>div>p>*")
   console.log(meetingsForm)
