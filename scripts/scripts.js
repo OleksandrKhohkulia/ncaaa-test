@@ -129,7 +129,7 @@ async function loadPage() {
 loadPage();  
 
 console.log('page loaded')
-document.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('load',()=>{
   const meetingsForm = document.querySelector("form")
   console.log(meetingsForm)
   if(meetingsForm){
