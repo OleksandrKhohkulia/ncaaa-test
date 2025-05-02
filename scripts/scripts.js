@@ -130,5 +130,17 @@ loadPage();
 
 
 document.addEventListener('DOMContentLoaded',()=>{
-  console.log('hi')
+  getMeetings();
 })
+
+function getMeetings(){
+  const meetingsForm = document.querySelector(".meetings-form form")
+  if(meetingsForm){
+    const container = document.createElement('div')
+    const title = document.createElement('h3')
+    const select = meetingsForm.Meetings.value
+    if(select){
+      title.textContent = select
+    }     
+  }
+}
