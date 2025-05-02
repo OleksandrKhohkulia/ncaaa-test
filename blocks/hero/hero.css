@@ -15,7 +15,6 @@
   margin-right: auto;
   text-shadow: 0 0 8px black;
   color: var(--background-color);
-  text-transform: unset;
 }
 
 .hero picture {
