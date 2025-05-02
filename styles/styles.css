@@ -270,6 +270,11 @@ main .section.highlight {
   grid-template-columns: repeat(auto-fill, minmax(310px, 1fr));
   max-width: 960px;
 }
+.cards.stay-tuned li>div>p{
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
 .about-content ul{
   padding: 0;
 }
