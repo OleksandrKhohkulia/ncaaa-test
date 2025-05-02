@@ -127,3 +127,5 @@ async function loadPage() {
 }
 
 loadPage();  
+
+console.log(document.querySelector('select#meetings'))
