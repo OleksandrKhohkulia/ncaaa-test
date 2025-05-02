@@ -128,32 +128,30 @@ async function loadPage() {
 
 loadPage();  
 
-console.log('page loaded')
-document.addEventListener('DOMContentLoaded',()=>{
-  console.log(document.body)
-  const meetingsBlock = document.querySelector(".meetings-form")
-  console.log(meetingsBlock)
-  let meetingsForm = meetingsBlock.querySelector("form")
-  console.log(meetingsForm)
-  meetingsForm = meetingsBlock.querySelector("div>div>p>*")
-  console.log(meetingsForm)
-  if(meetingsForm){
-    const select = meetingsForm.Meetings
-    select.addEventListener('change',getMeetings())
-    console.log('success')
-  }
+// console.log('page loaded')
+// document.addEventListener('DOMContentLoaded',()=>{
+//   console.log(document.body)
+//   const meetingsBlock = document.querySelector(".meetings-form")
+//   console.log(meetingsBlock)
+//   let meetingsForm = meetingsBlock.querySelector("form")
+//   console.log(meetingsForm)
+//   meetingsForm = meetingsBlock.querySelector("div>div>p>*")
+//   console.log(meetingsForm)
+//   if(meetingsForm){
+//     const select = meetingsForm.Meetings
+//     select.addEventListener('change',getMeetings())
+//     console.log('success')
+//   }
+// })
 
 
-})
-
-
-function getMeetings(){
-  console.log('success1')
-    const container = document.createElement('div')
-    const title = document.createElement('h3')
-    const select = meetingsForm.Meetings.value
-    if(select){
-      title.textContent = select
-      console.log('success2')
-    }
-}
+// function getMeetings(){
+//   console.log('success1')
+//     const container = document.createElement('div')
+//     const title = document.createElement('h3')
+//     const select = meetingsForm.Meetings.value
+//     if(select){
+//       title.textContent = select
+//       console.log('success2')
+//     }
+// }
