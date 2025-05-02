@@ -39,6 +39,12 @@
 .about-hero{
   background: linear-gradient(128deg, #20405a, #486275, #d8dde1);
 }
+.hero.healthcare h1{
+  text-transform: uppercase;
+  color: var(--button-color);
+  text-shadow: 0 0 1px #d73220;
+}
+
 .hero.healthcare>div>div>*{   
   max-width: 1200px;
   margin-left: auto;
