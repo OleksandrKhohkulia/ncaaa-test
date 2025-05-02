@@ -132,7 +132,10 @@ console.log('page loaded')
 document.addEventListener('DOMContentLoaded',()=>{
   console.log(document.body)
   const meetingsBlock = document.querySelector(".meetings-form")
-  const meetingsForm = meetingsBlock.querySelector("div>div>p>*")
+  console.log(meetingsBlock)
+  const meetingsForm = meetingsBlock.querySelector("form")
+  console.log(meetingsForm)
+  meetingsForm = meetingsBlock.querySelector("div>div>p>*")
   console.log(meetingsForm)
   if(meetingsForm){
     const select = meetingsForm.Meetings
