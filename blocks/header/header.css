@@ -245,14 +245,10 @@ header nav .nav-sections ul > li > ul > li {
     left: -24px;
     width: 200px;
     top: 150%;
-    padding: 16px;
     background-color: #033048;
     white-space: initial;
   }
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul>li:hover {
-    background-color:   #d62828;
-  }
-
+  
   header nav .nav-sections .default-content-wrapper > ul > li > ul::before {
     content: '';
     position: absolute;
@@ -264,9 +260,13 @@ header nav .nav-sections ul > li > ul > li {
     border-right: 8px solid transparent;
     border-bottom: 8px solid var(#033048);
   }
-
+  
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li {
-    padding: 8px 0;
+    color: white;
+    padding: 8px;
+  }
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul>li:hover {
+    background-color:   #d62828;
   }
 }
 
