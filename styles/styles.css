@@ -314,3 +314,9 @@ main .section.highlight {
   margin-top: 0;
   padding-top: 14.4px;
 }
+
+@media (width >= 900px) {
+  .take-action>div:first-child{
+    text-align: center;
+  }
+}
