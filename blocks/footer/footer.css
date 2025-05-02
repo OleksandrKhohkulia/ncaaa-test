@@ -40,6 +40,7 @@ footer ul {
 .custom-footer>ul>li{
   background-color: transparent !important; 
   border: none !important;
+  list-style: url(../../img/list-arrow.png);
 }
 .custom-footer .cards-card-image>p{
   display: flex;
