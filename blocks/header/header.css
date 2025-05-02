@@ -235,7 +235,7 @@ header nav .nav-sections ul > li > ul > li {
     position: relative;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > h5{
+  header nav .nav-sections .default-content-wrapper > ul > li > h5{
     margin: 0;
   }
 
