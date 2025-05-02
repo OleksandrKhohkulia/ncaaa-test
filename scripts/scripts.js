@@ -130,8 +130,8 @@ loadPage();
 
 console.log('page loaded')
 document.addEventListener('DOMContentLoaded',()=>{
-  console.log('page loaded1')
   const meetingsForm = document.querySelector(".meetings-form form")
+  console.log(meetingsForm)
   if(meetingsForm){
     const select = meetingsForm.Meetings
     select.addEventListener('change',getMeetings())
