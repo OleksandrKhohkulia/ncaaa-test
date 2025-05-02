@@ -51,5 +51,5 @@ footer ul {
   aspect-ratio: 1;
 }
 .custom-footer .cards-card-body>ul>li{
-  list-style: url(../../img/list-arrow.png);  
+  list-style: url(../../icons/arrow.svg)
 }
