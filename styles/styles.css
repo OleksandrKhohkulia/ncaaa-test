@@ -319,4 +319,12 @@ main .section.highlight {
   .take-action>div:first-child{
     text-align: center;
   }
+  .take-action .columns img{
+    width: 80%;
+  }
+  .take-action .columns picture{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
 }
