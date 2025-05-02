@@ -15,6 +15,7 @@
   margin-right: auto;
   text-shadow: 0 0 8px black;
   color: var(--background-color);
+  text-transform: unset;
 }
 
 .hero picture {
@@ -47,7 +48,4 @@
 .housing-hero h1{
   text-align: center;
   text-shadow: 0 0 4px white;
-}
-.main-hero h1,.about-hero h1 {
-  text-transform: none !important;
 }
