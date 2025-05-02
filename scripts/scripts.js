@@ -129,6 +129,6 @@ async function loadPage() {
 loadPage();  
 
 
-window.addEventListener('DOMContentLoaded',()=>{
+document.addEventListener('DOMContentLoaded',()=>{
   console.log('hi')
 })
