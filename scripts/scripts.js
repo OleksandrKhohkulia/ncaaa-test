@@ -141,6 +141,7 @@ function getMeetings(){
     const select = meetingsForm.Meetings.value
     if(select){
       title.textContent = select
+      console.log('success')
     }     
   }
 }
