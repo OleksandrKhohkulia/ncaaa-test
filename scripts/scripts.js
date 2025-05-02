@@ -126,12 +126,9 @@ async function loadPage() {
   loadDelayed();
 }
 
-async () => {
-  await loadPage();  
-  console.log('page loaded')
-}
+loadPage();  
 
-
+console.log('page loaded')
 document.addEventListener('DOMContentLoaded',()=>{
   const meetingsForm = document.querySelector("form")
   console.log(meetingsForm)
