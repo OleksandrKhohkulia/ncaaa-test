@@ -246,10 +246,10 @@ header nav .nav-sections ul > li > ul > li {
     width: 200px;
     top: 150%;
     padding: 16px;
-    background-color: var(#033048);
+    background-color: #033048;
     white-space: initial;
   }
-  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul:hover {
+  header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul>li:hover {
     background-color:   #d62828;
   }
 
