@@ -130,18 +130,24 @@ loadPage();
 
 
 document.addEventListener('DOMContentLoaded',()=>{
-  getMeetings();
-})
-
-function getMeetings(){
   const meetingsForm = document.querySelector(".meetings-form form")
   if(meetingsForm){
+    const select = meetingsForm.Meetings
+    select.addEventListener('change',getMeetings())
+    console.log('success')
+  }
+
+
+})
+
+
+function getMeetings(){
+  console.log('success1')
     const container = document.createElement('div')
     const title = document.createElement('h3')
     const select = meetingsForm.Meetings.value
     if(select){
       title.textContent = select
-      console.log('success')
-    }     
-  }
+      console.log('success2')
+    }
 }
