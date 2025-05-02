@@ -787,3 +787,10 @@ main div.form-wrapper {
         margin: 0;
     }
 }
+
+.meetings-form label.field-label{
+    font-weight: 600;
+    line-height: 1.25;
+    color: #105f8a;
+    font-size: var(--heading-font-size-l);
+}
