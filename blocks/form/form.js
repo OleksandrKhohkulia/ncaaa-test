@@ -630,4 +630,6 @@ export default async function decorate(block) {
   }
 }
 
-console.log(document.querySelector('select#meetings'))
+window.addEventListener('DOMContentLoaded',()=>{
+  console.log('hi')
+})
