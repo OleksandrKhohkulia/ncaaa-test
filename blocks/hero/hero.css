@@ -49,5 +49,5 @@
   text-shadow: 0 0 4px white;
 }
 .main-hero h1,.about-hero h1 {
-  text-transform: none;
+  text-transform: none !important;
 }
