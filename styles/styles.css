@@ -320,7 +320,7 @@ main .section.highlight {
     text-align: center;
   }
   .take-action img{
-    width: 80%;
+    width: 80% !important;
   }
   .take-action picture{
     display: flex;
