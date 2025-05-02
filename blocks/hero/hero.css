@@ -45,5 +45,6 @@
   margin-right: auto;
 }
 .housing-hero h1{
-  text-shadow: 0 0 4px #fff;
+  text-align: center;
+  text-shadow: 0 0 4px white;
 }
