@@ -53,12 +53,9 @@ footer ul {
 .custom-footer .cards-card-body>ul>li::before{
   content: url(../../icons/arrow.svg);
   display: block;
-  width: 10px;
-  height: 10px;
 }
 .custom-footer .cards-card-body>ul>li{
   list-style: none;
   display: flex;
-  align-items: center;
   gap: 10px;
 }
