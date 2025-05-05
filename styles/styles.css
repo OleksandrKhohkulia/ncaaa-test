@@ -336,3 +336,12 @@ main .section.highlight {
 .housing-resources ul{
   grid-template-columns: repeat(auto-fill, minmax(500px, 1fr)) !important;
 }
+
+h1#register-to-vote{
+  text-align: center;
+}
+
+.section.light.quote-container.embed-container .button-container{
+  display: flex;
+  justify-content: center;
+}
