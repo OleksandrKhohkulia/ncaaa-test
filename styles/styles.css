@@ -352,5 +352,5 @@ h1#register-to-vote{
   justify-content: center;
 }
 .social-justice img{
-  border-radius: 60px 0;
+  border-radius: 60px 0 !important;
 }
