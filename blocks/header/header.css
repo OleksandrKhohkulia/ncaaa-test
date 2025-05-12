@@ -266,15 +266,16 @@ header nav .nav-sections ul > li > ul > li {
     /* padding: 20px; */
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li >a, header nav .nav-sections .default-content-wrapper > ul > li > ul > li > p > a{
+  header nav .nav-sections .default-content-wrapper > ul > li > ul > li >a{
     display: block;
     padding: 20px 20px 20px 10px;
   }
 
-  header nav .nav-sections .default-content-wrapper > ul > li > ul > li > p > #text{
-    display: none;
+  header nav .nav-sections .default-content-wrapper > ul > li > ul > li > p > a{
+    display: block;
+    padding: 20px 20px 0 10px;
   }
-  
+
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul>li:hover {
     background-color:   #d62828;
   }
