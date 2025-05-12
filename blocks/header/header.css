@@ -273,7 +273,10 @@ header nav .nav-sections ul > li > ul > li {
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li > p > a{
     display: block;
-    padding: 20px 20px 0 10px;
+    padding: 20px 20px 20px 10px;
+    margin: 0;
+    background-color: transparent;
+    border-radius: 0;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul>li:hover {
