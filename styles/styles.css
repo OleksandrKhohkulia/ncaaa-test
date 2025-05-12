@@ -356,6 +356,13 @@ h1#register-to-vote{
   box-shadow: 2px 2px 15px 1px black;
 }
 
+.social-justice{
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
 @media (width >= 600px) {
   .hero.block h1{
     font-size: var(--heading-font-size-xxl) !important;
