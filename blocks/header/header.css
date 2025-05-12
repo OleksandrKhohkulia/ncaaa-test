@@ -277,6 +277,7 @@ header nav .nav-sections ul > li > ul > li {
     margin: 0;
     background-color: transparent;
     border-radius: 0;
+    text-align: left;
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul>li:hover {
