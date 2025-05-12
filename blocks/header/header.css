@@ -183,9 +183,10 @@ header nav .nav-sections ul > li > ul > li {
 
 header nav .nav-sections ul > li > ul > li > p > a{
   background-color: transparent !important;
-  padding-left: 0 !important;
+  padding: 0 !important;
   color: black !important;
   margin: 0 !important;
+  font-weight: 400 !important;
 }
 
 @media (width >= 900px) {
