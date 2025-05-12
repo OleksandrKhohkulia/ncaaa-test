@@ -267,7 +267,8 @@ header nav .nav-sections ul > li > ul > li {
   }
 
   header nav .nav-sections .default-content-wrapper > ul > li > ul > li >a {
-    padding: 20px 20px 20px 0;
+    display: block;
+    padding: 20px 20px 20px 10px;
   }
   header nav .nav-sections .default-content-wrapper > ul > li[aria-expanded='true'] > ul>li:hover {
     background-color:   #d62828;
