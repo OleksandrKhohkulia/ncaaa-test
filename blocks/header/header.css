@@ -187,6 +187,7 @@ header nav .nav-sections ul > li > ul > li > p > a{
   color: black !important;
   margin: 0 !important;
   font-weight: 400 !important;
+  border-radius: 0 !important;
 }
 
 @media (width >= 900px) {
