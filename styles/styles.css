@@ -358,7 +358,7 @@ h1#register-to-vote{
 
 @media (width >= 535px) {
   .hero.block h1{
-    font-size: var(--heading-font-size-xxl);
+    font-size: var(--heading-font-size-xxl) !important;
   }
 }
 
