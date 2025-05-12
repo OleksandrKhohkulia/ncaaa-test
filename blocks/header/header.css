@@ -181,6 +181,7 @@ header nav .nav-sections ul > li > ul > li {
   font-weight: 400;
 }
 
+@media (width < 900px){
 header nav .nav-sections ul > li > ul > li > p > a{
   background-color: transparent !important;
   padding: 0 !important;
@@ -188,6 +189,7 @@ header nav .nav-sections ul > li > ul > li > p > a{
   margin: 0 !important;
   font-weight: 400 !important;
   border-radius: 0 !important;
+}
 }
 
 @media (width >= 900px) {
