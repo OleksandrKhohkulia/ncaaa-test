@@ -355,3 +355,13 @@ h1#register-to-vote{
   border-radius: 60px 0 !important;
   box-shadow: 2px 2px 15px 1px black;
 }
+
+@media (width >= 535px) {
+  .hero.block h1{
+    font-size: var(--heading-font-size-xxl);
+  }
+}
+
+.hero.block h1 {
+ font-size: 40px;
+}
